@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Profile</title>
+
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="./style/profile.css">
+   
+</head>
+<body>
+  <nav class="container">
+        <h3>HELLO,  <span id="span"></span></h3>
+        <h5>DASHBOARD</h5>
+     <button id="logOut" onclick="signout()">Logout</button>
+       </nav>
+       <h2 class="heading">Top headlines from BBC News</h2>
+       <h2 id="search" style="color: grey;">Search- <input type="text" placeholder="author or title" id="input"></h2>
+  <div id="main">
+
+    </div>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+
+ <!-- firebaseUI -->
+ <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+ <script>
+         
+   // Your web app's Firebase configuration
+   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   const firebaseConfig = {
+     apiKey: "AIzaSyANiLV6L7s5C_taJilwZVQtTxx6KrE8uc0",
+     authDomain: "internship-38b23.firebaseapp.com",
+     projectId: "internship-38b23",
+     storageBucket: "internship-38b23.appspot.com",
+     messagingSenderId: "802441744032",
+   
+     appId: "1:802441744032:web:b444570eb1437c945103c5",
+     measurementId: "G-KYBWBFC8Q2"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+   
+
+</script>
+  <script src="./js/profile.js"></script>   
+</body>
+</html>
